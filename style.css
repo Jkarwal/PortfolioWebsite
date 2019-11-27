@@ -1,0 +1,215 @@
+body {
+    margin: 0px;
+    background-color: snow;
+    font-family: "Amatic SC";
+    font-weight: bolder;
+  }
+  
+  .navBar a:link {
+    color: black;
+  }
+  
+  .navBar a:visited {
+    color: black;
+  }
+  
+  .navBar a:hover {
+    color: white;
+  }
+  
+  .home-button img {
+    width: 80px;
+  }
+  
+  .navBar {
+    display: flex;
+    flex-direction: row;
+    //background-color: cyan;
+    justify-content: space-around;
+    align-content: stretch;
+    margin: 0px 25%;
+    max-width: 1500px;
+  }
+  
+  .pageTitle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 36px;
+  }
+  /*PROBLEM: Why is navBar slightly off between the landing page and visual development page?*/
+  
+  .header-button {
+    ////background-color: azure;
+    display: flex;
+    width: 100px;
+    //height: 80px;
+    /*SOLVED: Possible to make this height dependant on/ responsive to the [.home-button img {width: 80px;}] variable? 
+    Achieved with [align-content: stretch;] in the [.navBar] css to stretch to height of container*/
+    //margin: 0px 8px;
+    ////border: 2px solid slategrey;
+    /*PROBLEM: How to not get overlapping borders again?*/
+    flex-grow: 3;
+    justify-content: space-evenly;
+    //justify-content: center;
+    /*PROBLEM: How is [justify-content: center;] different than space-evenly?*/
+    align-items: center;
+    text-align: center;
+    font-size: 28px;
+  }
+  
+  .header-button:hover {
+    background-color: skyBlue;
+  }
+  
+  .home-button {
+    flex-grow: 0;
+  }
+  
+  .home-button img:hover {
+    filter: invert(100%);
+  }
+  
+  .divLink {
+    background-color: red;
+  }
+  
+  /*LANDING PAGE*/
+  
+  .landing {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0px 10%;
+  }
+  
+  .landingText {
+    font-size: 36px;
+  }
+  
+  .landingImage img {
+    //width: 80%;
+    /*PROBLEM: How to keep center with a width of percentage?*/
+    width: 1050px;
+  }
+  
+  /*VISUAL DEVELOPMENT PAGE*/
+  
+  .visDevGrid {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 0px 10%;
+  }
+  
+  .visDevContent {
+    height: 275px;
+    width: 400px;
+    background-size: cover;
+    background-position: center;
+    margin: 6px;
+    //border: 2px solid lightslategrey;
+  }
+  
+  .visDevContent-1 {
+    background-image: url("02_visDev/assets/01.jpg");
+  }
+  
+  .visDevContent-2 {
+    background-image: url("02_VISDEV/assets/02.jpg");
+  }
+  .visDevContent-3 {
+    background-image: url("02_VISDEV/assets/03.jpg");
+  }
+  .visDevContent-4 {
+    background-image: url("02_VISDEV/assets/04.jpg");
+  }
+  .visDevContent-5 {
+    background-image: url("02_VISDEV/assets/05.jpg");
+  }
+  .visDevContent-6 {
+    background-image: url("02_VISDEV/assets/06.jpg");
+  }
+  .visDevContent-7 {
+    background-image: url("02_VISDEV/assets/07.jpg");
+  }
+  .visDevContent-8 {
+    background-image: url("02_VISDEV/assets/08.jpg");
+  }
+  .visDevContent-9 {
+    background-image: url("02_VISDEV/assets/09.jpg");
+  }
+  .visDevContent-10 {
+    background-image: url("02_VISDEV/assets/10.jpg");
+  }
+  .visDevContent-11 {
+    background-image: url("02_VISDEV/assets/11.jpg");
+  }
+  .visDevContent-12 {
+    background-image: url("02_VISDEV/assets/12.jpg");
+  }
+  .visDevContent-13 {
+    background-image: url("02_VISDEV/assets/13.jpg");
+  }
+  .visDevContent-14 {
+    background-image: url("02_VISDEV/assets/14.jpg");
+  }
+  .visDevContent-15 {
+    background-image: url("02_VISDEV/assets/15.jpg");
+  }
+  .visDevContent-16 {
+    background-image: url("02_VISDEV/assets/16.jpg");
+  }
+  .visDevContent-17 {
+    background-image: url("02_VISDEV/assets/17.jpg");
+  }
+  
+  .overlay {
+    font-size: 28px;
+    color: white;
+    background-color: skyBlue;
+    height: 100%;
+    opacity: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: opacity 0.5s ease-in-out;
+  }
+  
+  .overlay:hover {
+    opacity: 1;
+  }
+  
+  .overlay a:link {
+    color: white;
+  }
+  
+  .overlay a:visited {
+    color: white;
+  }
+  
+  .overlay a:hover {
+    color: white;
+  }
+  
+  /*ABOUT PAGE*/
+  
+  .aboutGrid {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 0px 10%;
+  }
+  
+  .aboutImage img {
+    
+  }
+  
+  .aboutText {
+    
+    font-size: 24px;
+  }
+  
